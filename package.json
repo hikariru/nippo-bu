@@ -1,0 +1,19 @@
+{
+  "name": "nippo-bu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hikariru/nippo-bu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hikariru/nippo-bu/issues"
+  },
+  "homepage": "https://github.com/hikariru/nippo-bu#readme"
+}
