@@ -8,7 +8,7 @@ mkdir -p /tmp/nginx/logs/
 
 echo "$USERNAME:$(openssl passwd -apr1 $PASSWORD)" > /tmp/nginx/.htpasswd_env
 
-cp config/nginx.conf.erb /tmp/nginx/conf/nginx.conf
+erb config/nginx.conf.erb > /tmp/nginx/conf/nginx.conf
 
 # node server.js &
 
