@@ -4,8 +4,6 @@ env BASIC_AUTH_PASSWORD;
 worker_processes 1;
 
 http{
-  include mime.types;
-    default_type application/octet-stream;
   server {
     listen <%= ENV["PORT"] %>;
     server_name localhost;
