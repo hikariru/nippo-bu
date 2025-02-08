@@ -13,6 +13,6 @@ erb config/nginx.conf.erb > /tmp/nginx/conf/nginx.conf
 export HOST=127.0.0.1
 export PORT=8000
 
-npm start &
+nginx -p /tmp/nginx/ -c /tmp/nginx/conf/nginx.conf -g "daemon off;" &
 
-nginx -p /tmp/nginx/ -c /tmp/nginx/conf/nginx.conf -g "daemon off;"
+npm start
