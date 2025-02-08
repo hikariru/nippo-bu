@@ -10,6 +10,8 @@ echo "$USERNAME:$(openssl passwd -apr1 $PASSWORD)" > /tmp/nginx/.htpasswd_env
 
 erb config/nginx.conf.erb > /tmp/nginx/conf/nginx.conf
 
+export PORT=8000
+
 npm start &
 
 nginx -p /tmp/nginx/ -c /tmp/nginx/conf/nginx.conf -g "daemon off;"
