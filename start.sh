@@ -10,6 +10,7 @@ echo "$USERNAME:$(openssl passwd -apr1 $PASSWORD)" > /tmp/nginx/.htpasswd_env
 
 erb config/nginx.conf.erb > /tmp/nginx/conf/nginx.conf
 
+export HOST=127.0.0.1
 export PORT=8000
 
 npm start &
