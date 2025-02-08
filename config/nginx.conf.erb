@@ -9,7 +9,7 @@ events {
 
 http{
   upstream sveltekit {
-    server 127.0.0.1:<%= ENV["PORT"] %>};
+    server 127.0.0.1:<%= ENV["PORT"] %>;
     keepalive 8;
   }
   server {
