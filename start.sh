@@ -1,7 +1,7 @@
 #!/bin/bash
 
-chmod 1777 /etc/nginx
+chmod 1777 /tmp
 
-echo "$USERNAME:$(openssl passwd -crypt $PASSWORD)" > /etc/nginx/.htpasswd_env
+echo "$BASIC_AUTH_USERNAME:$(openssl passwd -crypt $BASIC_AUTH_PASSWORD)" > /tmp/.htpasswd
 
 bin/start-nginx npm start
